@@ -1,46 +1,53 @@
-/* Variables */
 :root {
-  --colour-primary: #6200ea;
-  --colour-secondary: #ff0080;
-  --colour-background-white: white;
-  --colour-background-light: #f0f0f0;
-  --colour-background-dark: black;
-  --colour-text-light: white;
-  --colour-text-dark: black;
+  /* ====== COLOUR VARIABLES ====== */
+  --colour-primary: #cdbee2;          /* Soft pastel purple for primary accents */
+  --colour-secondary: #ff0080;        /* Bright pink for secondary highlights */
+  --colour-background-white: white;   /* Standard white background */
+  --colour-background-light: #f0f0f0; /* Light grey background for subtle contrast */
+  --colour-background-dark: black;    /* Dark background option */
+  --colour-text-light: white;         /* Text colour for dark backgrounds */
+  --colour-text-dark: black;          /* Text colour for light backgrounds */
 
-  --width-max: 800px;
+  /* ====== LAYOUT WIDTH ====== */
+  --width-max: 800px;                 /* Maximum content width for readability */
 
-  --spacing-xs: 8px;
-  --spacing-s: 10px;
-  --spacing-m: 15px;
-  --spacing-l: 20px;
-  --spacing-xl: 40px;
-  --spacing-xxl: 80px;
+  /* ====== SPACING SCALE ====== */
+  --spacing-xs: 8px;                  /* Extra small spacing */
+  --spacing-s: 10px;                  /* Small spacing */
+  --spacing-m: 15px;                  /* Medium spacing */
+  --spacing-l: 20px;                  /* Large spacing */
+  --spacing-xl: 40px;                 /* Extra large spacing */
+  --spacing-xxl: 80px;                /* Double extra large spacing */
 
-  --font-size-heading: 48px;
-  --font-size-subheading: 24px;
-  --font-size-body: 16px;
-  --font-size-small: 12px;
-  --font-weight-bold: bold;
-  --font-family-body: Arial, sans-serif;
+  /* ====== TYPOGRAPHY ====== */
+  --font-size-heading: 48px;          /* Main heading size */
+  --font-size-subheading: 24px;       /* Subheading size */
+  --font-size-body: 16px;             /* Standard body text size */
+  --font-size-small: 12px;            /* Small text size (e.g., captions) */
+  --font-weight-bold: bold;           /* Bold weight for emphasis */
+  --font-family-body: Arial, sans-serif; /* Default font family */
 
-  --border-radius-s: 5px;
-  --border-radius-m: 10px;
-  --border-radius-l: 20px;
+  /* ====== BORDER RADIUS ====== */
+  --border-radius-s: 5px;             /* Small rounded corners */
+  --border-radius-m: 10px;            /* Medium rounded corners */
+  --border-radius-l: 20px;            /* Large rounded corners */
 
-  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* ====== EFFECTS ====== */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Apply border-box sizing to all elements and pseudo-elements
+   This ensures padding and borders are included in total element width/height */
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
 
-/* General Styles */
+/* ====== GENERAL BODY STYLES ====== */
 body {
-  font-family: var(--font-family-body);
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  font-family: var(--font-family-body); /* Use defined body font */
+  margin: 0;                            /* Remove default browser margin */
+  padding: 0;                           /* Remove default browser padding */
+  text-align: center;                   /* Center-align text by default */
 }
