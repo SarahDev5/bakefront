@@ -1,39 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declare the document type as HTML5 -->
+<html lang="en"> <!-- Set the language of the document to English -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | BakeFront</title>
+    <meta charset="UTF-8" /> <!-- Character encoding for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive scaling for mobile devices -->
+    <title>About | BakeFront</title> <!-- Title displayed in browser tab -->
+
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Link to external JavaScript file, loaded as a module and deferred until HTML parsing is complete -->
     <script type="module" defer src="../js/script.js"></script>
   </head>
   <body>
+    <!-- ================= HEADER ================= -->
     <header class="header">
       <div class="header__content">
+        
+        <!-- Logo section -->
         <div class="header__logo">
           <img class="header__logoImage" src="../images/img_bakefront.jpg" alt="BakeFront" />
         </div>
+
+        <!-- Navigation menu -->
         <nav class="header__nav">
           <a href="../index.html" class="header__link">Home</a>
-          <a href="./index.html" class="header__link header__link--active">About</a>
-          <a href="../recpie/index.html" class="header__link">Recipe</a>
+          <a href="./index.html" class="header__link header__link--active">About</a> <!-- Active page highlighted -->
+          <a href="../recipe/index.html" class="header__link">Recipe</a> <!-- NOTE: Previous "recpie" typo, has now been amended to "recipe" -->
           <a href="../shop/index.html" class="header__link">Shop</a>
         </nav>
       </div>
+
+      <!-- Title and subtitle area -->
       <div class="header__titles">
         <h1 class="header__title">About the Cakes</h1>
-        <p class="header__subtitle">Celebrate life's sweetest moments with our beautifully crafted customised cakes, designed to match your style, 
-          theme, and taste. Whether it's a birthday, wedding, anniversary, baby shower, or corporate event, our expert bakers turn your ideas into edible art.</p>
+        <p class="header__subtitle">
+          Celebrate life's sweetest moments with our beautifully crafted customised cakes, designed to match your style, 
+          theme, and taste. Whether it's a birthday, wedding, anniversary, baby shower, or corporate event, our expert bakers turn your ideas into edible art.
+        </p>
       </div>
     </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
     <main class="main">
+      <!-- Simple content section -->
       <p>Enhance your Celebration</p>
     </main>
+
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
+      <!-- Footer links -->
       <p class="footer__links">
         <a href="#" class="footer__link">Terms and Conditions</a> |
         <a href="#" class="footer__link">Cookies</a>
       </p>
+      <!-- Copyright -->
       <p class="footer__copyright">&copy; 2025</p>
     </footer>
   </body>
