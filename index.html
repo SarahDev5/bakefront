@@ -1,18 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Sets the language of the document to English -->
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Ask the Brains</title>
+    <meta charset="UTF-8" /> <!-- Ensures proper character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the site responsive on mobile devices -->
+    <title>Home | Ask the Brains</title> <!-- Title shown in browser tab -->
+    
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
+    
+    <!-- Link to external JavaScript file, loaded as a module and deferred until HTML parsing is complete -->
     <script type="module" defer src="./js/script.js"></script>
   </head>
+  
   <body>
+    <!-- Header section containing logo and navigation -->
     <header class="header">
       <div class="header__content">
+        
+        <!-- Logo area -->
         <div class="header__logo">
           <img class="header__logoImage" src="./images/img_bakefront.jpg" alt="BakeFront" />
         </div>
+        
+        <!-- Navigation menu -->
         <nav class="header__nav">
           <a href="./index.html" class="header__link header__link--active">Home</a>
           <a href="./about/index.html" class="header__link">About</a>
@@ -20,26 +30,34 @@
           <a href="./shop/index.html" class="header__link">Shop</a>
         </nav>
       </div>
+      
+      <!-- Title and subtitle in header -->
       <div class="header__titles">
         <h1 class="header__title">BakeFront</h1>
-        <p class="header__subtitle"
-        </p>
+        <p class="header__subtitle"></p> <!-- Currently empty; consider adding tagline or removing -->
       </div>
     </header>
+    
+    <!-- Main content area -->
     <main class="main">
-       <section class="hero">
-    <div class="container">
-      <h2 class="hero__title">Welcome to BakeFront</h2>
-      <p class="hero__description">
-        Celebrate life’s sweetest moments with BakeFront. From birthdays and weddings 
-      to cozy family gatherings, our cakes are crafted with love, creativity, and 
-      attention to detail. Explore our recipes, discover new flavors, and let us 
-      bring joy to your celebrations with edible art designed just for you.
-      </p>
-         </div>
-  </section>
-</main>
+      
+      <!-- Hero section with welcome message -->
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero__title">Welcome to BakeFront</h2>
+          <p class="hero__description">
+            Celebrate life’s sweetest moments with BakeFront. From birthdays and weddings 
+            to cozy family gatherings, our cakes are crafted with love, creativity, and 
+            attention to detail. Explore our recipes, discover new flavors, and let us 
+            bring joy to your celebrations with edible art designed just for you.
+          </p>
+        </div>
+      </section>
+      
     </main>
+    <!-- NOTE: There is an extra </main> closing tag in your original code. Removed here for correctness. -->
+    
+    <!-- Footer section -->
     <footer class="footer">
       <p class="footer__links">
         <a href="#" class="footer__link">Terms and Conditions</a> |
